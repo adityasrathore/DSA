@@ -1,4 +1,4 @@
-class MinStack {
+class MinStack { //From LeetCode Template
 public:
     stack <int> s;
     stack <int> ss;
