@@ -13,7 +13,7 @@ bool checkEqualPartition(int a[],int sum,int n){
 
     for(int i=1;i<n+1;i++){
         for(int j=1;j<sum+1;j++){
-            if(a[i-1]<sum)
+            if(a[i-1]<j)
                 t[i][j]=( t[i-1][j-a[i-1]] || t[i-1][j]);
             else
                 t[i][j]=t[i-1][j];
