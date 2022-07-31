@@ -25,7 +25,7 @@ void printInorder(Node* root){
     cout<<root->data<<" ";
     printInorder(root->right);
 } 
-void printRoot2Leaf(Node *root,vector <int> &v){
+void printRoot2Leaf (Node *root,vector <int> &v){
     if(root==NULL)
         return ;
     if(root->left==NULL && root->right==NULL){
