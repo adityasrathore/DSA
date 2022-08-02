@@ -19,7 +19,7 @@ int mincoins(vector <int> &coins,int sum){
 
     for(int i=2;i<n+1;i++){
         for(int j=1;j<sum+1;j++){
-            if(coins[i-1]<=sum)
+            if(coins[i-1]<=j)
                 t[i][j]=min(t[i][j-coins[i-1]]+1,t[i-1][j]);
             else
                 t[i][j]=t[i-1][j];
