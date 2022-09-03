@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-pair<int,int> StairCase(int a[][10],int n,int m,int key){
+pair<int,int> StairCase(int a[][10],int n,int m,int key)
+{
     if(a[0][0]>key || a[n-1][m-1]<key){
         return {-1,-1};
     }
