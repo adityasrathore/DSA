@@ -9,9 +9,9 @@ void sprialPrint(int a[][10],int n,int m){
         for(int i=startCol;i<=endCol;i++){
             cout<<a[startRow][i]<<" ";
         }
-        for(int i=startRow+1;i<=endRow;i++){
+        for(int i=startRow+1;i<=endRow;i++)
             cout<<a[i][endCol]<<" ";
-        }
+        
         for(int i=endCol-1;i>=startCol;--i){
             if(startRow==endRow)
                 break;
