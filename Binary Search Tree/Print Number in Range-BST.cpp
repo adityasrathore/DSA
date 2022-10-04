@@ -25,9 +25,9 @@ void printInorder(Node* root){
     cout<<root->data<<" ";
     printInorder(root->right);
 } 
-void printRange(Node* root,int r1,int r2){
+void printRange(Node* root,int r1, int r2){
     if(root==NULL)
-        return;
+        return; 
     if(root->data>=r1 && root->data<=r2){
         printRange(root->left,r1,r2);
         cout<<root->data<<" ";
